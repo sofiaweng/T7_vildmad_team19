@@ -22,13 +22,13 @@ body {
 
 /*----------menu-------------*/
 header {
+  background-image: url(../img/backgroundimg.webp);
   position: sticky;
   top: 0;
   z-index: 1;
 }
 /*navigationsbar*/
 .navbar {
-  background-color: white;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
