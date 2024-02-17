@@ -1,0 +1,24 @@
+
+/*---Skov Underside Laura---*/
+@media (min-width: 400px){
+.grid_2-8-2{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+}
+.grid_4-4{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-column: 2;
+}
+.grid_2-2-2-2{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-column: 2;
+}
+}
+
+.sticker{
+    max-width: 10%;
+}
+
+/*---Skov Underside Laura---*/
