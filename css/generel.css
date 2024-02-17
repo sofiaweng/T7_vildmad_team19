@@ -52,7 +52,7 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 /*logo*/
 .nav-branding {
@@ -100,7 +100,6 @@ li {
   /*-----------BURGERMENU SETTINGS----------*/
   .hamburger {
     display: block;
-    padding-left: 2rem;
   }
   /*de tre streger bliver til et kryds*/
   .hamburger.active .bar:nth-child(2) {
@@ -112,6 +111,13 @@ li {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
   }
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .nav-branding {
+    margin: auto;
+  }
   /*menu settings, standard gør den ikke synlig*/
   .nav-menu {
     position: absolute;
@@ -119,6 +125,8 @@ li {
     top: 17ch;
     gap: 0;
     flex-direction: column;
+    border-bottom: var(--lightgreen) solid;
+    border-top: var(--lightgreen) solid;
     background-color: white;
     width: 100%;
     text-align: center;
@@ -136,6 +144,5 @@ li {
 
   .nav-item {
     padding: 1rem;
-    border-bottom: 1px solid var(--lightestgreen);
   }
 }
