@@ -104,10 +104,101 @@ gør så man kan align tekst og knap indenfor sit grid*/
     grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-column: 2;
   }
+
+  .sticker1 {
+    max-width: 12%;
+    position: absolute;
+    top: 130%;
+    left: 77%;
+  }
+  .sticker2 {
+    max-width: 10%;
+    position: absolute;
+    top: 175%;
+    left: 12%;
+    transform: scaleX(-1)
+    
+  }
+  .sticker3 {
+    max-width: 10%;
+    position: absolute;
+    left: 77%;
+  }
 }
 
-.sticker {
-  max-width: 10%;
-}
 
+
+.bannerimage {
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    height: 589px;
+    width: 1280px;
+  }
+
+.whichForest {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  font-size: 4rem;
+  display: relative;
+  color: white;
+    transform: translate(0%, -400%);
+}
+  
+.underOverskrift{
+    background-color: #E0ECDB;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: -30%;
+    margin-bottom: 2%;
+  }
+  
+  .underImg{
+    margin-top: -30%;
+    margin-left: 2%;
+  }
+  .forestText{
+    font-size: 1.2rem;
+  }
+
+  .canFind{
+    background-color: #E0ECDB;
+    width: 203%;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 10%;
+  }
+
+  .gridItem{
+    display: grid;
+    width: 100%;
+    margin: 5%;
+    padding: 5%;
+  }
+
+  @media (max-width: 400px) {
+    .underOverskrift{
+        margin-top: -20%;
+      }
+
+      .underImg{
+        margin-top: 0%;
+      }
+
+      .canFind{
+        width: 100%;
+      }
+
+      .whichForest {
+        font-size: 2rem;
+          transform: translate(0%, -200%);
+      }
+      main{
+        overflow-x: hidden;
+      }
+  }
 /*---Skov Underside Laura---*/
