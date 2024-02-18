@@ -52,6 +52,22 @@ gør så man kan align tekst og knap indenfor sit grid*/
   transition: 0.5s;
 }
 
+.nalskov {
+  background-image: url(https://vildmad.dk/application/files/8314/9096/3662/sankested_naleskov-squashed.jpg);
+  background-size: cover;
+  height: 50vh;
+  display: grid;
+  align-items: center;
+}
+.nalskov h2 {
+  background-color: rgba(0, 0, 0, 0.642);
+  color: var(white);
+}
+.lovskov {
+  background-image: url(https://vildmad.dk/application/files/1314/9096/4038/sankested_lovskov-squashed.jpg);
+  background-size: cover;
+  height: 50vh;
+}
 /*---Skov Underside Laura---*/
 @media (min-width: 400px) {
   .grid_2-8-2 {
