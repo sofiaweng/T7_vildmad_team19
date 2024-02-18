@@ -1,4 +1,9 @@
 /* skovside sofia */
+.grid_1fr-1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* hero section (tekst på baggrund) */
 .hero-img {
   display: grid;
@@ -46,6 +51,7 @@ gør så man kan align tekst og knap indenfor sit grid*/
   background-image: url(../img/arrowdowngreen.svg);
   transition: 0.5s;
 }
+
 /*---Skov Underside Laura---*/
 @media (min-width: 400px) {
   .grid_2-8-2 {
