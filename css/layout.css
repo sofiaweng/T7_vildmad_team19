@@ -125,15 +125,20 @@ gør så man kan align tekst og knap indenfor sit grid*/
     left: 77%;
   }
 
-}
+  .arrowback{
+    max-width: 10%;
+    position: absolute;
+    top: 25%;
+  }
 
+}
 
 
 .bannerimage {
     background-size: cover;
     display: grid;
     align-items: center;
-    height: 589px;
+    height: 200px;
     width: 1280px;
   }
 
