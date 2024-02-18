@@ -200,5 +200,8 @@ gør så man kan align tekst og knap indenfor sit grid*/
       main{
         overflow-x: hidden;
       }
+      .sticker1, .sticker2, .sticker3{
+        display: none;
+      }
   }
 /*---Skov Underside Laura---*/
