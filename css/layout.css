@@ -1,24 +1,71 @@
-
+/* skovside sofia */
+/* hero section (tekst på baggrund) */
+.hero-img {
+  display: grid;
+  /*aspect-ratio: 80/100;*/
+  background-image: url(../img/illustrations/backgroundimg.svg);
+  background-size: cover;
+  padding-bottom: 2%;
+  width: 100%;
+  height: auto;
+  transition: 1s;
+  overflow: hidden;
+  height: 85vh;
+}
+/*container for tekst og knap til section
+gør så man kan align tekst og knap indenfor sit grid*/
+.hero-fill {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.hero-ikon {
+  width: 8rem;
+  margin: auto;
+}
+.hero-p {
+  width: 70%;
+  margin: auto;
+}
+.hero-button {
+  display: grid;
+  align-items: self-end;
+}
+.button {
+  aspect-ratio: 67/41;
+  background-image: url(../img/arrowdownblack.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8%;
+  height: auto;
+  /*placerer item i midten*/
+  margin: auto;
+  transition: 0.5s;
+}
+.button:hover {
+  background-image: url(../img/arrowdowngreen.svg);
+  transition: 0.5s;
+}
 /*---Skov Underside Laura---*/
-@media (min-width: 400px){
-.grid_2-8-2{
+@media (min-width: 400px) {
+  .grid_2-8-2 {
     display: grid;
     grid-template-columns: 2fr 8fr 2fr;
-}
-.grid_4-4{
+  }
+  .grid_4-4 {
     display: grid;
     grid-template-columns: 4fr 4fr;
     grid-column: 2;
-}
-.grid_2-2-2-2{
+  }
+  .grid_2-2-2-2 {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-column: 2;
-}
+  }
 }
 
-.sticker{
-    max-width: 10%;
+.sticker {
+  max-width: 10%;
 }
 
 /*---Skov Underside Laura---*/
