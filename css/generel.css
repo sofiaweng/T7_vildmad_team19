@@ -32,6 +32,11 @@ video {
   height: auto;
   display: block;
 }
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
 /*----------menu-------------*/
 header {
   background-image: url(../img/backgroundimg.webp);

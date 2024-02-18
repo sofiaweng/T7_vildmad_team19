@@ -2,6 +2,7 @@
 .grid_1fr-1fr {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 5px;
 }
 
 /* hero section (tekst på baggrund) */
@@ -23,6 +24,9 @@ gør så man kan align tekst og knap indenfor sit grid*/
   display: grid;
   justify-content: center;
   text-align: center;
+}
+.hero-text h1 {
+  font-size: 2rem;
 }
 .hero-ikon {
   width: 8rem;
@@ -55,19 +59,35 @@ gør så man kan align tekst og knap indenfor sit grid*/
 .nalskov {
   background-image: url(https://vildmad.dk/application/files/8314/9096/3662/sankested_naleskov-squashed.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 55vh;
   display: grid;
   align-items: center;
+  transition: ease-in-out 0.2s;
 }
-.nalskov h2 {
+.nalskov h2,
+.lovskov h2 {
   background-color: rgba(0, 0, 0, 0.642);
-  color: var(white);
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+  margin: auto;
+  font-size: 2.5rem;
 }
+
 .lovskov {
   background-image: url(https://vildmad.dk/application/files/1314/9096/4038/sankested_lovskov-squashed.jpg);
   background-size: cover;
-  height: 50vh;
+  height: 55vh;
+  display: grid;
+  align-items: center;
+  transition: ease-in-out 0.2s;
 }
+.nalskov:hover,
+.lovskov:hover {
+  filter: grayscale(20);
+  transition: ease-in-out 0.2s;
+}
+
 /*---Skov Underside Laura---*/
 @media (min-width: 400px) {
   .grid_2-8-2 {
