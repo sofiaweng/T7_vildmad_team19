@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.top-image {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #f1f1f1;
+}
+
+.billede1 {
+  background-color: #00a747;
+}
+
+.billede2 {
+  background-color: #aecc9f;
+}
+
+.vildmad {
+  display: flex;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  text-align: center;
+  align-items: center;
+  padding-left: 55%;
+  font-size: 12cqw;
+}
+
+.billede1 {
+  text-align: center;
+  justify-content: center;
+  font-size: 4cqw;
+}
+
+.billede2 img {
+  width: 80%;
+  padding-left: 30%;
+  padding-top: 10%;
+}
+
+.baggrund-container {
+  font-size: 2cqw;
+  text-align: center;
+  justify-content: center;
+}
+
+.billede2text {
+  padding-top: 10%;
+}
