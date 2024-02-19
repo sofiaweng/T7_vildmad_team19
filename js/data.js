@@ -1,0 +1,3 @@
+//https://zspprnvzxkuipvppeudr.supabase.co
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzcHBybnZ6eGt1aXB2cHBldWRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NDY4MzQsImV4cCI6MjAyMzMyMjgzNH0.ej-pnIWcXh8mQo5PvnqV9FXMajNdyzeRjOM5FYHDzlQ 
+
