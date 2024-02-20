@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const landscapeParam = urlParams.get('landscape');
 
+
 if (landscapeParam === 'coniferous forest') {
     console.log('Coniferous forest');
     document.querySelector(".whichForest").textContent = "Coniferous forest";
@@ -14,7 +15,9 @@ if (landscapeParam === 'coniferous forest') {
     document.querySelector(".forestImg1").src = "https://vildmad.dk/application/files/1314/9096/4038/sankested_lovskov-squashed.jpg";
 }
 
-fetch("https://zspprnvzxkuipvppeudr.supabase.co/rest/v1/ingredients", {
+const url = `https://zspprnvzxkuipvppeudr.supabase.co/rest/v1/ingredients?landscapes=cs.["${landscapeParam}"]`;
+  
+fetch(url, {
     method: "GET",
     headers: {
       apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpzcHBybnZ6eGt1aXB2cHBldWRyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NDY4MzQsImV4cCI6MjAyMzMyMjgzNH0.ej-pnIWcXh8mQo5PvnqV9FXMajNdyzeRjOM5FYHDzlQ"  
@@ -23,7 +26,8 @@ fetch("https://zspprnvzxkuipvppeudr.supabase.co/rest/v1/ingredients", {
     .then(res => res.json())
     .then(showData);
   
-  function showData(items) {
+function showData(items) {
+    console.log("items er: ", items)
     items.forEach(showItems);
   }
   
@@ -33,19 +37,26 @@ fetch("https://zspprnvzxkuipvppeudr.supabase.co/rest/v1/ingredients", {
     const copy = template.cloneNode(true);
   
     copy.querySelector(".gridItem").src = item.prof_img;
-      
 
     const parentElement = document.querySelector(".grid_2-2-2-2");
     parentElement.appendChild(copy)
 
+    
+
   
+    
 
-if (item.landscapes == "deciduous forest") {
+/* if (item.landscapes == "deciduous forest") {
     copy.querySelector(".grid_2-2-2-2").remove();
-}
+} */
+      
+      
+      
 
 }
-   /*  copy.querySelector("?").textContent = product.productdisplayname;
+   /*  
+   document.querySelector("#popupHeader").textContent = item.titel;
+   document.querySelector("?").textContent = product.productdisplayname;
     copy.querySelector("?").textContent = product.brandname;
     copy.querySelector("?").textContent = product.price; */
     
