@@ -34,20 +34,28 @@
   text-align: center;
   justify-content: center;
   font-size: 4cqw;
+  color: #f1f1f1;
 }
 
 .billede2 img {
-  width: 80%;
-  padding-left: 30%;
-  padding-top: 10%;
+  position: relative;
+  width: 60%;
+  top: 10%;
+  left: 20%;
 }
 
 .baggrund-container {
   font-size: 2cqw;
   text-align: center;
   justify-content: center;
+  background-color: #00a747;
+  max-width: 80%; /* Indstil maksimal bredde til 80% af forældreelementet */
+  margin: 0 auto; /* Centrer elementet vandret */
 }
 
 .billede2text {
-  padding-top: 10%;
+  color: #f1f1f1;
+  position: relative;
+  margin-top: 20%;
+  padding: 10px; /* Tilføjer lidt polstring rundt om teksten */
 }
