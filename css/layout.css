@@ -216,3 +216,120 @@ gør så man kan align tekst og knap indenfor sit grid*/
     gap: 5px;
   }
 }
+
+/*---Index---*/
+.container {
+    display: grid;
+    grid-template-rows: 1fr 0.9fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .top-image {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #f1f1f1;
+  }
+  
+  .billede1 {
+    background-color: #00a747;
+  }
+  
+  .billede2 {
+    background-color: #aecc9f;
+  }
+  
+  .vildmad {
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    text-align: center;
+    align-items: center;
+    padding-left: 55%;
+    font-size: 12cqw;
+  }
+  
+  .billede1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 4cqw;
+    color: #f1f1f1;
+  }
+  
+  .billede2 img {
+    position: relative;
+    width: 60%;
+    top: 10%;
+    left: 20%;
+  }
+  
+  .baggrund-container {
+    font-size: 2cqw;
+    text-align: center;
+    justify-content: center;
+    background-color: #00a747;
+    max-width: 80%; /* Indstil maksimal bredde til 80% af forældreelementet */
+    margin: 0 auto; /* Centrer elementet vandret */
+  }
+  
+  .billede2text {
+    color: #f1f1f1;
+    position: relative;
+    margin-top: 20%;
+    padding: 10px; /* Tilføjer lidt polstring rundt om teksten */
+  }
+  /*---Index---*/
+
+  /*---Pop Up---*/
+/* Popup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content {
+    height: fit-content;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  /* Styling for popup content */
+  #popupHeader {
+    margin-bottom: 10px;
+  }
+  
+  #popupText {
+    margin-bottom: 10px;
+  }
+  
+  #popupSubheader {
+    margin-bottom: 0;
+  }
+  
+    /*---Pop Up---*/
+  
