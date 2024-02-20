@@ -13,6 +13,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/generel.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -34,26 +35,49 @@
     </header>
     <main>
         <a href="skov.html"><img class="arrowback" src="img/Vector 3.png" alt=""></a>
-        <img class="forestImg1" src="https://vildmad.dk/application/files/1314/9096/4038/sankested_lovskov-squashed.jpg" alt="">
+        <img class="forestImg1" src="https://vildmad.dk/application/files/1314/9096/4038/sankested_lovskov-squashed.jpg"
+            alt="">
         <h1 class="whichForest">Underside overskrift</h1>
         <section class="grid_2-8-2">
             <section class="grid_4-4" id="aboutForest">
                 <div>
-                <h2 class="underOverskrift">Under overskrift</h2>
-                <p class="forestText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illum magni rem officiis, magnam ipsum, expedita et in repudiandae similique veniam quis nisi! Aspernatur, explicabo suscipit inventore veritatis quo et!
-                Id non tempore accusantium voluptatem dolores aperiam omnis distinctio cupiditate. Ducimus dolor officiis ad quae nihil animi commodi, natus, exercitationem labore praesentium corporis non, maxime ea. Nihil illum pariatur architecto.
-                </p>
+                    <h2 class="underOverskrift">Under overskrift</h2>
+                    <p class="forestText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illum magni
+                        rem officiis, magnam ipsum, expedita et in repudiandae similique veniam quis nisi! Aspernatur,
+                        explicabo suscipit inventore veritatis quo et!
+                        Id non tempore accusantium voluptatem dolores aperiam omnis distinctio cupiditate. Ducimus dolor
+                        officiis ad quae nihil animi commodi, natus, exercitationem labore praesentium corporis non,
+                        maxime ea. Nihil illum pariatur architecto.
+                    </p>
                 </div>
-                <img  class="underImg" src="https://danskgartneri.dk/-/media/danskgartneri/billeder/skov/boegeskov-red.jpg?h=503&iar=0&w=900&hash=F1CC20BFC5254039902EB4FF5A50DB25" alt="">
+                <img class="underImg"
+                    src="https://danskgartneri.dk/-/media/danskgartneri/billeder/skov/boegeskov-red.jpg?h=503&iar=0&w=900&hash=F1CC20BFC5254039902EB4FF5A50DB25"
+                    alt="">
                 <h2 class="canFind">Dette kan du finde</h2>
             </section>
-            
+
             <article class="grid_2-2-2-2">
-                <img class="gridItem" src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
-                <img class="gridItem" src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
-                <img class="gridItem" src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
-                <img class="gridItem" src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
+                <img class="gridItem" onclick="openPopup(this)"
+                    src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
+                <img class="gridItem" onclick="openPopup(this)"
+                    src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
+                <img class="gridItem" onclick="openPopup(this)"
+                    src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
+                <img class="gridItem" onclick="openPopup(this)"
+                    src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
             </article>
+
+            <!-- Popup -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <img src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
+                    <h1 id="popupHeader">Popup Header</h1>
+                    <p id="popupText">This is a paragraph in the popup.</p>
+                    <h2 id="popupSubheader">Popup Subheader</h2>
+                </div>
+            </div>
+
         </section>
         <img class="sticker1" src="img/BladeLyst.png" alt="">
         <img class="sticker2" src="img/BladeLyst.png" alt="">
@@ -61,6 +85,7 @@
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
