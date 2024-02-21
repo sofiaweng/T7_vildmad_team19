@@ -272,8 +272,14 @@ gør så man kan align tekst og knap indenfor sit grid*/
   text-align: center;
   justify-content: center;
   background-color: #00a747;
+  border-radius: 1rem;
   max-width: 80%; /* Indstil maksimal bredde til 80% af forældreelementet */
   margin: 0 auto; /* Centrer elementet vandret */
+  transition: 0.2s;
+}
+.baggrund-container:hover {
+  background-color: var(--neongreen);
+  transition: 0.2s;
 }
 
 .billede2text {
