@@ -100,6 +100,27 @@ li {
   color: var(--white);
   background-color: var(--neongreen);
 }
+
+footer {
+  background-color: #72757a;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer img {
+  width: 100%;
+  height: 100px;
+}
+
+footer svg {
+  height: 40px;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+}
 /*-------------mobil---------------*/
 @media (max-width: 700px) {
   /*-----------BURGERMENU SETTINGS----------*/

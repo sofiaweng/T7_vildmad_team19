@@ -102,6 +102,9 @@ gør så man kan align tekst og knap indenfor sit grid*/
     grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-column: 2;
   }
+  .grid_2-2-2-2 span {
+    display: none;
+  }
 
   .sticker1 {
     max-width: 12%;
