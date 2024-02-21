@@ -21,7 +21,7 @@
             <span></span>
             <a href="index.html"><img class="nav-branding" src="img/logo.svg" alt="logo"></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="skov.html" class="nav-link active">The Forest</a></li>
+                <li class="nav-item"><a href="skov.html" class="nav-link active">Forests</a></li>
                 <li class="nav-item"><a href="skovunderside.html?landscape=deciduous forest" class="nav-link">Deciduous</a></li>
                 <li class="nav-item"><a href="skovunderside.html?landscape=coniferous forest" class="nav-link">Coniferous</a></li>
             </ul>
@@ -66,10 +66,13 @@
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closePopup()">&times;</span>
-                    <img src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
+                    <template id="Mypopup">
+                    <img id="popupimg" src="https://www.vildmad.dk/application/files/3114/9036/9795/logkarse.jpg?ajax=true" alt="">
                     <h1 id="popupHeader">Popup Header</h1>
                     <p id="popupText">This is a paragraph in the popup.</p>
                     <h2 id="popupSubheader">Popup Subheader</h2>
+                    </template> 
+            
                 </div>
             </div>
 

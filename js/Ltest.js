@@ -1,13 +1,12 @@
 const urlParams = new URLSearchParams(window.location.search);
 const landscapeParam = urlParams.get('landscape');
 
-
 if (landscapeParam === 'coniferous forest') {
     console.log('Coniferous forest');
     document.querySelector(".whichForest").textContent = "Coniferous forest";
     document.querySelector(".forestText").textContent = "Coniferous trees are able to grow in sandy soil without much nutrition. The many needles that fall from the trees create a special environment- They contain acid, which makes it impossible for earthworms to survive and take care of decomposing the dead plant material on the forest floor. This means that mushrooms take care of it instead - and therefore the coniferous forest is a very good place for finding mushrooms. ";
     document.querySelector(".forestImg1").src = "https://vildmad.dk/application/files/8314/9096/3662/sankested_naleskov-squashed.jpg";
-    /*document.querySelector(".underImg").src = item.prof_img; */
+  
 } else {
     console.log('Deciduous forest');
     document.querySelector(".whichForest").textContent = "Deciduous forest";
@@ -27,8 +26,12 @@ fetch(url, {
     .then(showData);
   
 function showData(items) {
-    console.log("items er: ", items)
-    items.forEach(showItems);
+  console.log("items er: ", items)
+  items.forEach(showItems);
+  if (items.length > 0) {
+    const selectedItem = items[0];
+    showPopup(selectedItem);
+}
   }
   
   function showItems(item) {
@@ -41,25 +44,25 @@ function showData(items) {
     const parentElement = document.querySelector(".grid_2-2-2-2");
     parentElement.appendChild(copy)
 
-    
 
-  
-    
+  }
 
-/* if (item.landscapes == "deciduous forest") {
-    copy.querySelector(".grid_2-2-2-2").remove();
-} */
-      
-      
+  function showPopup(popupitem) {
+    console.log(popupitem);
+    const popupTemplate = document.querySelector("#Mypopup").content;
+    const myPopup = popupTemplate.cloneNode(true);
+
+    myPopup.querySelector("#popupimg").src = popupitem.prof_img;
+    myPopup.querySelector("#popupHeader").textContent = popupitem.titel;
+    myPopup.querySelector("#popupText").textContent = popupitem.description;
+    myPopup.querySelector("#popupSubheader").textContent = popupitem.months;
+
+    const parentElement2 = document.querySelector(".modal-content");
+    parentElement2.appendChild(myPopup)
+       
       
 
 }
-   /*  
-   document.querySelector("#popupHeader").textContent = item.titel;
-   document.querySelector("?").textContent = product.productdisplayname;
-    copy.querySelector("?").textContent = product.brandname;
-    copy.querySelector("?").textContent = product.price; */
-    
-
+  
 
 
