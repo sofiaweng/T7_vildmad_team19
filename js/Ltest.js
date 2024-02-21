@@ -28,11 +28,14 @@ fetch(url, {
 function showData(items) {
   console.log("items er: ", items)
   items.forEach(showItems);
-  if (items.length > 0) {
-    const selectedItem = items[0];
-    showPopup(selectedItem);
+   // Add click event listeners to each .gridItem element
+   document.querySelectorAll(".gridItem").forEach((item, index) => {
+    item.addEventListener("click", () => {
+        showPopup(items[index]);
+    });
+     
+});
 }
-  }
   
   function showItems(item) {
     console.log(item);
@@ -58,9 +61,11 @@ function showData(items) {
     myPopup.querySelector("#popupSubheader").textContent = popupitem.months;
 
     const parentElement2 = document.querySelector(".modal-content");
-    parentElement2.appendChild(myPopup)
-       
-      
+    parentElement2.appendChild(myPopup);
+
+    item.removeEventListener("click", () => {
+      showPopup(items[index]);
+  });
 
 }
   

@@ -332,4 +332,8 @@ gør så man kan align tekst og knap indenfor sit grid*/
   }
   
     /*---Pop Up---*/
+
+.gridItem:hover{
+    cursor: pointer;
+}
   
