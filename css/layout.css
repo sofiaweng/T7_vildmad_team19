@@ -206,9 +206,10 @@ gør så man kan align tekst og knap indenfor sit grid*/
   }
   .sticker1,
   .sticker2,
-  .sticker3 {
+  .sticker3, .arrowback{
     display: none;
   }
+  
 }
 /*---Skov Underside Laura---*/
 @media (min-width: 700px) {
