@@ -102,6 +102,9 @@ gør så man kan align tekst og knap indenfor sit grid*/
     grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-column: 2;
   }
+  .grid_2-2-2-2 span {
+    display: none;
+  }
 
   .sticker1 {
     max-width: 12%;
@@ -203,9 +206,10 @@ gør så man kan align tekst og knap indenfor sit grid*/
   }
   .sticker1,
   .sticker2,
-  .sticker3 {
+  .sticker3, .arrowback{
     display: none;
   }
+  
 }
 /*---Skov Underside Laura---*/
 @media (min-width: 700px) {
@@ -351,4 +355,9 @@ gør så man kan align tekst og knap indenfor sit grid*/
   text-align: left;
   margin-left: 10%;
   margin-top: 10%;
+}
+
+
+.gridItem:hover{
+    cursor: pointer;
 }
