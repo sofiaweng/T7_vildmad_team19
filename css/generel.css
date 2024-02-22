@@ -15,7 +15,9 @@ h2,
 h3 {
   font-family: "Gurajada", sans-serif;
 }
-
+h5 {
+  color: var(--black);
+}
 body {
   font-family: "Glory", sans-serif;
   background-color: var(--white);
